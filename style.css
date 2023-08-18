@@ -1,0 +1,154 @@
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #E4E5E7;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Roboto Light", sans-serif;
+}
+
+.container {
+  display: block;
+  width: 400px;
+  margin: 100px auto 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li * {
+  float: left;
+}
+
+li, h3 {
+  clear: both;
+  list-style: none;
+}
+
+input, button {
+  outline: none;
+}
+
+.title_app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: dodgerblue;
+}
+
+.form {
+  width: 100%;
+  height: 100px;
+  border: 1px solid lightgray;
+  box-shadow: 2px 3px darkgrey;
+  border-radius: 30px;
+}
+
+.input {
+  width: 250px;
+  height: 50px;
+  margin: 20px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+
+.input:focus {
+  outline: 1px solid dodgerblue;
+}
+
+.button {
+  width: 80px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(30, 144, 255, 0.6);
+  transition: 0.2s ease-in-out;
+  color: #525252;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: dodgerblue;
+}
+
+.form_button {
+  margin: 20px 0;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button_block {
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: rgba(174, 180, 190, 0.62);
+  box-shadow: 1px 2px grey;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: dodgerblue;
+}
+
+.todo {
+  width: 411px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  box-shadow: 2px 3px darkgrey;
+  margin-bottom: 20px;
+}
+
+.todo span {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.button_todo {
+  width: 60px;
+  height: 30px;
+  border-radius: 50px;
+  margin-right: 5px;
+  color: #282828;
+}
+
+.mark {
+  background-color: rgba(73, 194, 73, 0.87);
+  width: 80px;
+}
+
+.delete {
+  background-color: #d35454;
+}
+.mark:hover {
+  background-color: rgba(10, 161, 10, 0.94);
+}
+
+.delete:hover {
+  background-color: #c42c2c;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.marked {
+  background-color: rgba(30, 144, 255, 0.57);
+}
